@@ -37,3 +37,7 @@ git add README.md
 git add src/hooks/useGif.js
 git rebase --continue
 git push origin main
+
+## 📸 Screenshots
+
+![Random Gif Generator](https://via.placeholder.com/600x300.png?text=Random+GIF+UI+Screenshot)
