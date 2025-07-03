@@ -20,9 +20,19 @@ const Random = () => {
       <h1 className='mt-[15px] text-2xl underline uppercase font-bold'> Random GIF Viewer</h1>
 
 
-    {
-        loading ? (<Spinner/>) : (<img src= {gif} width="450" />)
-    }
+      {
+        loading ? (
+          <Spinner />
+        ) : (
+          <img
+            src={gif}
+            alt="Random GIF"
+            width="400"
+            className="rounded-lg shadow-md animate-fadeIn transition-transform duration-500 hover:scale-105 hover:rotate-1"
+          />
+        )
+      }
+
 
       
 

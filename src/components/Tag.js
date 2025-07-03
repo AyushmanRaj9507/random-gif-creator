@@ -18,16 +18,19 @@ const Tag = () => {
         Random {tag} Gif
       </h1>
 
-      {loading ? (
-        <Spinner />
-      ) : (
-        <img
-          src={gif}
-          width="400"
-          alt={`random ${tag}`}
-          className="rounded-lg shadow-md animate-fadeIn"
-        />
-      )}
+      {
+        loading ? (
+          <Spinner />
+        ) : (
+          <img
+            src={gif}
+            alt={`random ${tag}`}
+            width="400"
+            className="rounded-lg shadow-md animate-fadeIn transition-transform duration-500 hover:scale-105 hover:-rotate-1"
+          />
+        )
+      }
+
 
       <input
         className="w-10/12 text-lg py-2 rounded-lg mb-[3px] text-center"
