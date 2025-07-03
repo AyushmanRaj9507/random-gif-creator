@@ -14,6 +14,9 @@ const useGif = (tag) => {
     const imageSource = data.data.images.downsized_large.url;
     setGif(imageSource);
     setLoading(false);
+
+    // 👇 Scroll to top after GIF loads
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   useEffect(() => {
